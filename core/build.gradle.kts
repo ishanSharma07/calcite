@@ -21,6 +21,7 @@ plugins {
     kotlin("jvm")
     id("com.github.vlsi.crlf")
     id("com.github.vlsi.ide")
+    id("com.github.johnrengelman.shadow")
     calcite.fmpp
     calcite.javacc
 }
