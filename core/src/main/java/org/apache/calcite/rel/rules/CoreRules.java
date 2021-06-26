@@ -761,4 +761,9 @@ public class CoreRules {
   public static final ReduceExpressionsRule.WindowReduceExpressionsRule
       WINDOW_REDUCE_EXPRESSIONS =
       ReduceExpressionsRule.WindowReduceExpressionsRule.Config.DEFAULT.toRule();
+
+  /**Rule that matches a Filter Project Aggregate chain and tries to bypass the Project by
+   * removing it and updating the filter conditions.**/
+  public static final FilterProjectBypassRule FILTER_PROJECT_BYPASS_RULE =
+      FilterProjectBypassRule.Config.DEFAULT.toRule();
 }
